@@ -43,11 +43,11 @@ pipeline {
             echo "Build completed successfully. View at ${BUILD_URL}"
             emailext (
                 subject: "SUCCESS: Build #${BUILD_NUMBER}",
-                from: "barbadiya.mlal@gmail.com",          // <= add this
-                replyTo: "barbadiya.mlal@gmail.com", 
+                from: "robintyagi@gmail.com",          // <= add this
+                replyTo: "robintyagi@gmail.com", 
                 mimeType: "text/plain",
                 body: "Build completed successfully. View at ${BUILD_URL}",
-                to: "hindaunvlog@gmail.com",
+                to: "robintyagi@gmail.com",
                 attachLog: true
             )
         }
@@ -56,19 +56,19 @@ pipeline {
             emailext (
                 subject: "FAILURE: Build #${BUILD_NUMBER}",
                 body: "Build failed. View logs at ${BUILD_URL}",
-                to: "nishmohan86@gmail.com"
+                to: "robintyagi@gmail.com"
             )
         }
         unstable {
             emailext (
-                to: 'nishmohan86@gmail.com',
+                to: 'robintyagi@gmail.com',
                 subject: "UNSTABLE: #${env.BUILD_NUMBER}",
                 body: "Build unstable. ${env.BUILD_URL}"
             )
         }
         aborted {
             emailext (
-                to: 'nishmohan86@gmail.com',
+                to: 'robintyagi@gmail.com',
                 subject: "ABORTED: #${env.BUILD_NUMBER}",
                 body: "Build aborted. ${env.BUILD_URL}"
             )
