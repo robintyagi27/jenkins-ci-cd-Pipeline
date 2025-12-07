@@ -81,7 +81,7 @@ Connect with EC2 instance then following commands:
 
 ## Jenkins Pipeline Running
 <img width="939" height="401" alt="image" src="https://github.com/user-attachments/assets/4015ee7f-6b15-4f41-961e-3b0efdbdd801" />
-<img width="940" height="1059" alt="image" src="https://github.com/user-attachments/assets/737dbf2a-3a2e-44de-84ce-7c2b12573294" />
+
 
 ## Email Notification
 <img width="940" height="411" alt="image" src="https://github.com/user-attachments/assets/d4e87b9f-a18e-442a-888d-b9d3e1a06cda" />
