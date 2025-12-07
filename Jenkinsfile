@@ -56,19 +56,19 @@ pipeline {
             emailext (
                 subject: "FAILURE: Build #${BUILD_NUMBER}",
                 body: "Build failed. View logs at ${BUILD_URL}",
-                to: "robintyagi@gmail.com"
+                to: "rt@gmail.com"
             )
         }
         unstable {
             emailext (
-                to: 'robintyagi@gmail.com',
+                to: 'rt@gmail.com',
                 subject: "UNSTABLE: #${env.BUILD_NUMBER}",
                 body: "Build unstable. ${env.BUILD_URL}"
             )
         }
         aborted {
             emailext (
-                to: 'robintyagi@gmail.com',
+                to: 'rt@gmail.com',
                 subject: "ABORTED: #${env.BUILD_NUMBER}",
                 body: "Build aborted. ${env.BUILD_URL}"
             )
